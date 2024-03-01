@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "zyneeduno@gmail.com"; // Replace with your email address
     $subject = "Feedback from Dessy Website";
     $message = "Feedback: " . $feedback;
-    $headers = "https://dessy-website.vercel.app/"; // Replace with your email address or website name
+    $headers = "zyneeduno@gmail.com"; // Replace with your email address or website name
 
     // Send the email
     mail($to, $subject, $message, $headers);
