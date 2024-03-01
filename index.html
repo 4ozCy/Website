@@ -159,7 +159,7 @@
         <div class="container">
             <h2>Welcome to Dessy Bot</h2>
             <p>Looking for the perfect pickup line? You've come to the right place! Dessy Bot has a collection of hilarious and cheesy pickup lines to help you break the ice.</p>
-</div>
+        </div>
     </div>
 
     <div class="container">
@@ -201,3 +201,22 @@
 
     <footer>
         <p>Join our Discord server for support and updates: <a href="https://discord.com/invite/ARRkT6Bz4Y" target="_blank" rel="noopener noreferrer">Support Server</a></p>
+    </footer>
+
+    <script>
+        // Check if the feedback was successfully sent
+        <?php
+        session_start();
+        if (isset($_SESSION["feedback_sent"])) {
+            if ($_SESSION["feedback_sent"]) {
+                echo "alert('Feedback submitted successfully!');";
+            } else {
+                echo "alert('Failed to submit feedback. Please try again later.');";
+            }
+            // Unset the session variable to prevent displaying the notification multiple times
+            unset($_SESSION["feedback_sent"]);
+        }
+        ?>
+    </script>
+</body>
+    </html>
