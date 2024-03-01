@@ -144,13 +144,13 @@
 </head>
 <body>
     <header>
-        <h1> Dessy website </h1>
+        <h1>Dessy Website</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#invite">Invite</a></li>
                 <li><a href="#terms">Terms of Service</a></li>
                 <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#feedback">Feedback</a></li>
             </ul>
         </nav>
     </header>
@@ -159,6 +159,7 @@
         <div class="container">
             <h2>Welcome to Dessy Bot</h2>
             <p>Looking for the perfect pickup line? You've come to the right place! Dessy Bot has a collection of hilarious and cheesy pickup lines to help you break the ice.</p>
+            <a href="#invite" class="button">Invite Dessy Bot</a>
         </div>
     </div>
 
@@ -188,11 +189,16 @@
                 <li>Dessy Bot uses industry-standard security measures to protect your personal information from unauthorized access, use, or disclosure.</li>
             </ul>
         </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback" class="feedback">
+            <h2>Feedback</h2>
+            <form action="send_feedback.php" method="post">
+                <textarea name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea><br>
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </section>
     </div>
 
     <footer>
         <p>Join our Discord server for support and updates: <a href="https://discord.com/invite/ARRkT6Bz4Y" target="_blank" rel="noopener noreferrer">Support Server</a></p>
-    </footer>
-
-</body>
-</html>
