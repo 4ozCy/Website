@@ -4,8 +4,8 @@
   "description": "A backend for instant media sharing with shareable links",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "media",
